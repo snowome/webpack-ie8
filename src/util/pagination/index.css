@@ -1,0 +1,24 @@
+.pg-content {
+    color: #333;
+    text-align: center;
+}
+.pg-content .pg-item {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0 15px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.pg-content .pg-item.disabled {
+    color: #ccc;
+    background: none;
+    cursor: not-allowed;
+}
+.pg-content .pg-item.active { border: 1px solid #f6f6f6; }
+.pg-content .page-total { margin-left: 10px; }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title %> -- MMail电商平台</title>
+</head>
+<body>
+<%= require('html-loader!./layout/nav-simple.html') %>
+
+<div class="page-wrap">
+    <div class="w">
+        <div class="user-con">
+            <div class="user-title">找回密码</div>
+            <div class="user-box">
+                <div class="error-item" id="errItem">
+                    <i class="fa fa-minus-circle error-icon"></i>
+                    <p class="err-msg errMsg">error</p>
+                </div>
+                <div class="step-con" id="stepUsername">
+                    <p class="user-item-text">请输入用户名：</p>
+                    <div class="user-item">
+                        <label class="user-label" for="userName" ><i class="fa fa-user"></i></label>
+                        <input class="user-content" id="userName" placeholder="请输入用户名" autocomplete="off" type="text" />
+                    </div>
+                    <a class="btn btn-danger btn-lg btn-block btn-submit" id="submitUserName">下一步</a>
+                </div>
+                <div class="step-con" id="stepQuestion">
+                    <p class="user-item-text">密码提示问题是：<span class="question"></span></p>
+                    <div class="user-item">
+                        <label class="user-label" for="answer" ><i class="fa fa-key"></i></label>
+                        <input class="user-content" id="answer" placeholder="请输入密码提示问题答案" autocomplete="off" type="text" />
+                    </div>
+                    <a class="btn btn-danger btn-lg btn-block btn-submit" id="submitQuestion">下一步</a>
+                </div>
+                <div class="step-con" id="stepPassword">
+                    <p class="user-item-text">请输入新密码：</p>
+                    <div class="user-item">
+                        <label class="user-label" for="password" ><i class="fa fa-lock"></i></label>
+                        <input class="user-content" id="password" placeholder="请输入新密码" autocomplete="off" type="password" />
+                    </div>
+                    <a class="btn btn-danger btn-lg btn-block btn-submit" id="submitPassword">下一步</a>
+                </div>
+                <div class="link-item">
+                    <a class="link" href="./user-login.html">返回登录>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

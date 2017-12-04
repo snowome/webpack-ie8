@@ -1,0 +1,75 @@
+.page-wrap {
+    padding: 40px 0;
+    background-color: #e72955;
+}
+.user-con {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    background-color: #fff;
+}
+.user-con .user-title {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.user-con .user-box {
+    padding: 20px;
+}
+.user-con .user-box .error-item {
+    display: none;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 4px 0 4px 40px;
+    font-size: 14px;
+    color: red;
+    background-color: #fde9e9;
+    border: 1px solid red;
+}
+.user-con .user-box .error-item .error-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    margin-top: -6px;
+}
+.user-con .user-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+.user-con .user-item .user-label {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 40px;
+    line-height: 36px;
+    font-size: 18px;
+    color: #d3d3d3;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-right: 1px solid #bdbdbd;
+}
+.user-con .user-item .user-content {
+    padding: 10px 0 10px 50px;
+    width: 308px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 15px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+}
+.user-con .btn-submit {
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.user-con .link-item {
+    margin-top: 10px;
+    text-align: right;
+}
+.user-con .link-item .link {
+    margin-left: 10px;
+    color: #999;
+}

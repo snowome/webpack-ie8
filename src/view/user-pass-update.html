@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title %> -- MMail电商平台</title>
+</head>
+<body>
+<%= require('html-loader!./layout/nav.html') %>
+<%= require('html-loader!./layout/header.html') %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a class="link" href="./index.html">MMal</a>
+            <span>></span>
+            <span class="link-text"><%= htmlWebpackPlugin.options.title %></span>
+        </div>
+    </div>
+</div>
+<div class="page-wrap w">
+    <%= require('html-loader!./layout/nav-side.html') %>
+    <div class="content with-nav">
+        <div class="panel">
+            <div class="panel-title">修改密码</div>
+            <div class="panel-body" id="panelBody">
+                <div class="user-info">
+                    <div class="form-line">
+                        <label class="label" for="oldPass">原密码:</label>
+                        <input class="input" id="oldPass" type="password" autocomplete="off" />
+                    </div>
+                    <div class="form-line">
+                        <label class="label" for="newPass">新密码:</label>
+                        <input class="input" id="newPass"  type="password" autocomplete="off" />
+                    </div>
+                    <div class="form-line">
+                        <label class="label" for="confirmPass">确认密码:</label>
+                        <input class="input" id="confirmPass"  type="password" autocomplete="off" />
+                    </div>
+                    <a class="btn btn-danger" id="btnSubmit">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

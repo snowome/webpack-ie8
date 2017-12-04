@@ -1,0 +1,121 @@
+.cart-table {
+    margin-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+}
+
+.cart-header {
+    background-color: #eee;
+}
+.cart-header .cart-cell {
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.cart-table .cart-cell.cell-check {
+    padding-left: 20px;
+    width: 6%;
+    text-align: left;
+}
+.cart-table .cart-cell.cell-img {
+    width: 10%;
+    text-align: left;
+}
+.cart-table .cart-cell.cell-img .p-img {
+    margin: 10px 0;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+.cart-table .cart-cell.cell-info {
+    width: 35%;
+    text-align: left;
+}
+.cart-header .cell-info {
+    width: 45%;
+    padding-left: 0;
+}
+.cart-table .cart-cell.cell-price {
+    width: 10%;
+    text-align: center;
+}
+.cart-table .cart-cell.cell-count {
+    width: 15%;
+    text-align: center;
+}
+.cart-table .cart-cell.cell-count .count-input {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #333;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.cart-table .cart-cell.cell-count .count-btn {
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.cart-table .cart-cell.cell-total {
+    width: 14%;
+    text-align: center;
+    font-weight: bold;
+}
+.cart-table .cart-cell.cell-opera {
+    width: 10%;
+    text-align: center;
+}
+
+.cart-footer {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+.cart-footer .select-con {
+    float: left;
+    padding-left: 20px;
+}
+.cart-footer .delete-con {
+    float: left;
+    margin-left: 20px;
+}
+.cart-footer .submit-con {
+    float: right;
+}
+.cart-footer .submit-con .submit-total {
+    margin-right: 30px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c60023;
+}
+.cart-footer .submit-con .submit-btn {
+    padding: 0;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+}
+.error-tip {
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #f60;
+    font-weight: bold;
+    text-align: center;
+    background-color: #eee;
+}
